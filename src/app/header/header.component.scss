@@ -1,0 +1,20 @@
+.logo {
+    width: 80px;
+    height: 50px; 
+    margin-right: 20px; 
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-toolbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile{
+    font-size: 32px;
+    margin-left: 750px;
+    color: rgb(54, 54, 123);
+  }

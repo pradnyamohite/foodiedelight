@@ -1,0 +1,28 @@
+<!-- src/app/restaurant-form/restaurant-form.component.html -->
+<h2 mat-dialog-title>{{data ? 'Edit' : 'Add'}} Restaurant</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-row">
+    <mat-form-field class="flex-item">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field class="flex-item">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" required></textarea>
+    </mat-form-field>
+  </div>
+  <div class="form-row">
+    <mat-form-field class="flex-item">
+      <mat-label>Location</mat-label>
+      <input matInput formControlName="location" required>
+    </mat-form-field>
+    <mat-form-field class="flex-item">
+      <mat-label>Additional Info</mat-label>
+      <textarea matInput formControlName="additionalInfo"></textarea>
+    </mat-form-field>
+  </div>
+  <div class="form-actions">
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update' : 'Add'}}</button>
+    <button mat-stroked-button color="warn" mat-dialog-close>Cancel</button>
+  </div>
+</form>
